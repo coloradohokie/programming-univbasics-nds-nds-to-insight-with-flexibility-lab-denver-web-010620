@@ -74,7 +74,7 @@ end
 
 list = build_master_list(vm)
 puts list
-puts count_by_snack_price(vm)
+puts count_by_snack_price(list)
 
 
     
