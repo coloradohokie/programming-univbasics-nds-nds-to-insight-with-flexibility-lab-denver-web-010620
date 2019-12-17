@@ -45,6 +45,7 @@ end
 def build_master_list(nds)
   x=0
   master_list = []
+  puts nds.length
   while x < nds.length do
     y=0
     while y < nds[x].length do
