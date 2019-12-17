@@ -47,10 +47,10 @@ def build_master_list(nds)
   master_list = []
   while x < nds.length do
     y=0
-    puts "row length = #{nds[x].length}"
+#    puts "row length = #{nds[x].length}"
     while y < nds[x].length do
       z=0
-      puts "spinner depth = #{nds[x][y].length}"
+ #     puts "spinner depth = #{nds[x][y].length}"
       while z < nds[x][y].length do
         master_list << extract_item_on_spinner(nds,x,y,z)
  #       puts x, y, z, master_list
