@@ -42,6 +42,10 @@ def extract_item_on_spinner(nds, row_index, column_index, depth)
 #  puts h
 end
 
+def list_contents_of_spinner
+
+
+
 def build_master_list(nds)
   x=0
   master_list = []
