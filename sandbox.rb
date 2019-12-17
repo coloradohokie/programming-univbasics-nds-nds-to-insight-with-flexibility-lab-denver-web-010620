@@ -59,8 +59,8 @@ def build_master_list(nds)
       y+=1
     end
     x+=1
-    return master_list
   end
+  return master_list
 end
         
 
