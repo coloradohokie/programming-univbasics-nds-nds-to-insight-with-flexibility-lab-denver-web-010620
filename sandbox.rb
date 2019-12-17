@@ -39,7 +39,7 @@ vm =[
 # each spinner
 def extract_item_on_spinner(nds, row_index, column_index, depth)
   h = nds[row_index][column_index][depth]
-  puts h
+#  puts h
 end
 
 def build_master_list(nds)
