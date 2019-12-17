@@ -74,6 +74,7 @@ def count_by_snack_price(master_list)
   return h
 end
 
+list = {}
 list = build_master_list(vm)
 puts list
 #puts count_by_snack_price(list)
