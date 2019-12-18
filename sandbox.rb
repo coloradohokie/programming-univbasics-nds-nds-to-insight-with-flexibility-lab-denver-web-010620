@@ -77,15 +77,16 @@ def count_by_snack_price(master_list)
   return h
 end
 
-def print_snack_costs(list)
+def print_snack_costs(h)
   p "snack cost     count"
   p "--------------------"
-  list.each{|key, value| p "#{key}       #{value}"
+  h.each{|key, value| p "#{key}       #{value}"
 end
 
 list = build_master_list(vm)
 p list
 puts count_by_snack_price(list)
+print_snack_costs(list)
 
 
 
