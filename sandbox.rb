@@ -46,10 +46,11 @@ end
 def list_contents_of_spinner(h,nds,x,y,spinner_depth)
   i=0
   while i < spinner_depth do
-    h << nds[x][y][spinner_depth]
+    a << nds[x][y][spinner_depth]
     i += 1
   end
-  return h
+  p a
+  return a
 end
 
 def build_master_list(nds)
@@ -58,8 +59,7 @@ def build_master_list(nds)
   while x < nds.length do
     y=0
     while y < nds[x].length do
-      depth = nds[x][y].length
-      list_contents_of_spinner(master_list,nds,x,y,depth)
+      list_contents_of_spinner(master_list,nds,x,y,nds[x][y].length)
 #      z=0
 #      while z < nds[x][y].length do
 #        master_list << extract_item_on_spinner(nds,x,y,z)
