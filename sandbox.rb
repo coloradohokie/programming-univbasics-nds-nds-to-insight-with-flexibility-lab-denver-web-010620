@@ -78,6 +78,8 @@ def count_by_snack_price(master_list)
 end
 
 def print_snack_costs(h)
+  a = []
+  h.each{|key|}
   puts "snack cost     count"
   puts "--------------------"
   h.each{|key, value| puts "#{key}       #{value}"}
