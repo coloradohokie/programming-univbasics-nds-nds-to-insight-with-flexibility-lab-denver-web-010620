@@ -80,6 +80,7 @@ end
 def print_snack_costs(h)
   a = []
   h.each_key{|key| a << key}
+  a.sort
   p a
   puts "snack cost     count"
   puts "--------------------"
