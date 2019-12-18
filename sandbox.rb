@@ -87,7 +87,7 @@ def print_snack_costs(h)
   
   i=0
   while i < a.length do
-    puts "#{a[i]}       #{h[a[i]}"
+    puts "#{a[i]}       #{h[a[i]]}"
     i+=1
   end
   
