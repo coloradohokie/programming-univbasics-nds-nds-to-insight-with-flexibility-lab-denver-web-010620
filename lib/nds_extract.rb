@@ -51,7 +51,8 @@ end
 def movies_with_director_key(name, movies_collection)
   pp movies_collection
 end
-  
+
+movies_with_director_key(directors_database)  
 
 
 def gross_per_studio(collection)
