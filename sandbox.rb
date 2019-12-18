@@ -81,17 +81,13 @@ def print_snack_costs(h)
   a = []
   h.each_key{|key| a << key}
   a.sort!
-  p a
   puts "snack cost     count"
   puts "--------------------"
-  
   i=0
   while i < a.length do
     puts "#{a[i]}       #{h[a[i]]}"
     i+=1
   end
-  
-#  h.each{|key, value| puts "#{key}       #{value}"}
 end
 
 list = build_master_list(vm)
