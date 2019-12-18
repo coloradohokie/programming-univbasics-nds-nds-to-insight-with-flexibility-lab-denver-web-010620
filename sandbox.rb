@@ -80,7 +80,7 @@ end
 def print_snack_costs(h)
   a = []
   h.each{|key| a << key}
-  puts a
+  p a
   puts "snack cost     count"
   puts "--------------------"
   h.each{|key, value| puts "#{key}       #{value}"}
