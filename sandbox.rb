@@ -86,7 +86,7 @@ end
 list = build_master_list(vm)
 p list
 puts count_by_snack_price(list)
-print_snack_costs(list)
+print_snack_costs(count_by_snack_price)
 
 
 
