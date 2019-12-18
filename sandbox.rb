@@ -59,11 +59,6 @@ def build_master_list(nds)
     y=0
     while y < nds[x].length do
       list_contents_of_spinner(master_list,nds,x,y,nds[x][y].length)
-#      z=0
-#      while z < nds[x][y].length do
-#        master_list << extract_item_on_spinner(nds,x,y,z)
-#        z +=1
-#      end
       y+=1
     end
     x+=1
@@ -82,9 +77,16 @@ def count_by_snack_price(master_list)
   return h
 end
 
+def print_snack_costs(list)
+  p "snack cost     count"
+  p "--------------------"
+  p 
+
 list = build_master_list(vm)
 p list
 puts count_by_snack_price(list)
+
+
 
 
     
