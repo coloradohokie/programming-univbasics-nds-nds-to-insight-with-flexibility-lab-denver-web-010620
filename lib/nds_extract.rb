@@ -50,7 +50,12 @@ end
   # movie_with_director_name method
 def movies_with_director_key(name, movies_collection)
   a=[]
-  movie_with_director_name(name, movies_collection)
+  i=0
+  while i < movies_collection.length do
+    a[i] = movie_with_director_name(name, movies_collection[i])
+    i += 1
+  end
+  return a
 end
 
 pp directors_database
