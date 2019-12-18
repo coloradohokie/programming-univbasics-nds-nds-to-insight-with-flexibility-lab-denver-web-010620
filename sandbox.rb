@@ -63,7 +63,7 @@ def build_master_list(nds)
 #      while z < nds[x][y].length do
 #        master_list << extract_item_on_spinner(nds,x,y,z)
 #        z +=1
-      end
+#      end
       y+=1
     end
     x+=1
