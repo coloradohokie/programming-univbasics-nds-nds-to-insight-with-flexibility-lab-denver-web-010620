@@ -42,9 +42,12 @@ def extract_item_on_spinner(nds, row_index, column_index, depth)
 #  puts h
 end
 
-def list_contents_of_spinner
-
-
+def list_contents_of_spinner(h,nds,x,y,spinner_depth)
+  i=0
+  while i < spinner_depth do
+    h << extract_item_on_spinner(nds,x,y,spinner_depth)
+    i += 1
+  end
 
 def build_master_list(nds)
   x=0
@@ -53,12 +56,11 @@ def build_master_list(nds)
     y=0
 #    puts "row length = #{nds[x].length}"
     while y < nds[x].length do
-      z=0
- #     puts "spinner depth = #{nds[x][y].length}"
-      while z < nds[x][y].length do
-        master_list << extract_item_on_spinner(nds,x,y,z)
- #       puts x, y, z, master_list
-        z +=1
+      list_contents_of_spinner(master_list,nds,x,y,nds[x][y].length)
+#      z=0
+#      while z < nds[x][y].length do
+#        master_list << extract_item_on_spinner(nds,x,y,z)
+#        z +=1
       end
       y+=1
     end
