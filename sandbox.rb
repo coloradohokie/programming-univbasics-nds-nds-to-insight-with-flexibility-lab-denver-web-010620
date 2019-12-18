@@ -36,16 +36,17 @@ vm =[
   ]
 
 
-# each spinner
+=begin
 def extract_item_on_spinner(nds, row_index, column_index, depth)
   h = nds[row_index][column_index][depth]
 #  puts h
 end
+=end
 
 def list_contents_of_spinner(h,nds,x,y,spinner_depth)
   i=0
   while i < spinner_depth do
-    h << extract_item_on_spinner(nds,x,y,spinner_depth)
+    h << nds[x][y][spinner_depth]
     i += 1
   end
   return h
