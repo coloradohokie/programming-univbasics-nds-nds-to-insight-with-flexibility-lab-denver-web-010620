@@ -80,7 +80,7 @@ end
 def print_snack_costs(h)
   p "snack cost     count"
   p "--------------------"
-  h.each{|key, value| p "#{key}       #{value}"
+  h.each{|key, value| p "#{key}       #{value}"}
 end
 
 list = build_master_list(vm)
