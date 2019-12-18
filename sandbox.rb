@@ -46,11 +46,9 @@ end
 def list_contents_of_spinner(a,nds,x,y,spinner_depth)
   i=0
   while i < spinner_depth do
-#    p nds[x][y][i]
     a << nds[x][y][i]
     i += 1
   end
-  p a
   return a
 end
 
@@ -86,7 +84,7 @@ end
 
 list = build_master_list(vm)
 p list
-#puts count_by_snack_price(list)
+puts count_by_snack_price(list)
 
 
     
