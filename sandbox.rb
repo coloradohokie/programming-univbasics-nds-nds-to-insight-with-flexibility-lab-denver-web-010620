@@ -43,7 +43,7 @@ def extract_item_on_spinner(nds, row_index, column_index, depth)
 end
 =end
 
-def list_contents_of_spinner(h,nds,x,y,spinner_depth)
+def list_contents_of_spinner(a,nds,x,y,spinner_depth)
   i=0
   while i < spinner_depth do
     a << nds[x][y][spinner_depth]
