@@ -46,6 +46,7 @@ end
 def list_contents_of_spinner(a,nds,x,y,spinner_depth)
   i=0
   while i < spinner_depth do
+    p nds[x][y][spinner_depth]
     a << nds[x][y][spinner_depth]
     i += 1
   end
